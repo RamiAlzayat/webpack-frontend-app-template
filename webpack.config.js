@@ -6,9 +6,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function (env) {
   const isEnvProduction = env.production;
-  const isEnvDevelopment = env.development;
   return {
-    mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development',
+    mode: isEnvProduction ? 'production' : 'development',
     entry: './src/index.js',
     devServer: {
       static: path.resolve(__dirname, 'dist'),
