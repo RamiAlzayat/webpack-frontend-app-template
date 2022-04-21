@@ -1,0 +1,14 @@
+sass/*.sass
+dist/css/*
+fonts
+node_modules
+
+# Ignore these files
+*.html
+*.ico
+*.jpg
+*.json
+*.markdown
+*.png
+*.yml
+*.yaml

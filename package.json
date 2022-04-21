@@ -1,0 +1,39 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn && webpack --env production",
+    "dev": "yarn && webpack serve --open --env development",
+    "start:production": "yarn && webpack serve --host 0.0.0.0 --env production",
+    "lint": "eslint src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpack-template/webpack-template.git"
+  },
+  "author": "Rami Alzayat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webpack-template/webpack-template/issues"
+  },
+  "homepage": "https://github.com/webpack-template/webpack-template#readme",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "prettier": "^2.6.2",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
